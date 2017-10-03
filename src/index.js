@@ -11,7 +11,7 @@ export default (dependency, { baseDir } = {}) =>
           ...Object.keys(pkg.devDependencies),
         ];
 
-        return resolve(dependencies.includes(dependency));
+        return resolve(dependencies.indexOf(dependency) !== -1);
       })
       .catch(reject);
   });
