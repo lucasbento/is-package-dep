@@ -1,9 +1,9 @@
 import isPackageDep from '../index';
 
-it('return wheter the package is installed', async () => {
+it('verify a dependency', async () => {
   expect(await isPackageDep('jest')).toBe(true);
 });
 
-it('return wheter the package is not installed', async () => {
+it('verify a non-dependency', async () => {
   expect(await isPackageDep('mocha')).toBe(false);
 });
