@@ -1,6 +1,6 @@
 <h1 align="center">is-package-dep</h1>
 <p align="center">
-  Parse the closest package.json file and returns whether a dependency is a dependency or not.
+  Parses the closest package.json file and returns whether it contains the dependency or not.
 </p>
 
 <p align="center">
