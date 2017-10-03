@@ -10,7 +10,7 @@
 </p>
 
 ## Why
-Needed to check whether a folder is a [react-native](https://github.com/facebook/react-native) or not.
+Needed to check whether a folder is a [react-native](https://github.com/facebook/react-native) project or not.
 
 ## Install
 
