@@ -1,6 +1,6 @@
 <h1 align="center">is-package-dep</h1>
 <p align="center">
-  Parse the closest `package.json` file and returns whether a dependency is a dependency or not.
+  Parse the closest package.json file and returns whether a dependency is a dependency or not.
 </p>
 
 <p align="center">
@@ -49,4 +49,4 @@ MIT © [Lucas Bento](https://twitter.com/lbentosilva)
 
 ---
 
-Thanks to [Sindre Sorhus](https://github.com/sindresorhus)' [read-pkg-up](https://github.com/sindresorhus/read-pkg-up) module.
+Thanks to [Sindre Sorhus](https://github.com/sindresorhus) for [read-pkg-up](https://github.com/sindresorhus/read-pkg-up) module.
