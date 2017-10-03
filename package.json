@@ -1,0 +1,44 @@
+{
+  "name": "is-package-dep",
+  "description": "Check if a package is a dependency",
+  "version": "0.0.1",
+  "author": {
+    "name": "Lucas Bento",
+    "email": "lucas.bsilva@outlook.com",
+    "url": "https://github.com/lucasbento"
+  },
+  "bugs": "https://github.com/lucasbento/is-package-dep/issues",
+  "dependencies": {
+    "read-pkg-up": "^2.0.0"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.24.0",
+    "babel-core": "^6.24.0",
+    "babel-eslint": "^8.0.1",
+    "babel-jest": "^21.2.0",
+    "babel-preset-es2015": "^6.24.0",
+    "babel-preset-stage-0": "^6.22.0",
+    "eslint": "^4.8.0",
+    "eslint-config-airbnb": "^15.1.0",
+    "eslint-plugin-import": "^2.2.0",
+    "jest": "^21.2.1"
+  },
+  "homepage": "https://github.com/lucasbento/is-package-dep#readme",
+  "license": "MIT",
+  "main": "./dist/index.js",
+  "repository": {
+    "type": "git",
+    "url": "http://github.com/lucasbento/is-package-dep"
+  },
+  "engines": {
+    "node": ">=4.4.7"
+  },
+  "scripts": {
+    "build": "npm run clear && babel src --ignore *.spec.js,__tests__,__mocks__ --out-dir dist --copy-files",
+    "clear": "rm -rf ./dist",
+    "lint": "eslint ./src",
+    "prepublish": "npm run build",
+    "test": "npm run lint && jest --runInBand",
+    "watch": "babel --ignore *.spec.js,__tests__,__mocks__ -w -d ./dist ./src --copy-files"
+  }
+}
