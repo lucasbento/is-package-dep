@@ -34,7 +34,7 @@ isPackageDep('react-native')
 ## API
 
 ### isPackageDep(packageName, [options])
-Returns a `Promise` that holds whether the package is installed or not.
+Returns a boolean value that holds whether the package is installed or not.
 
 #### packageName
 Type: `string`
