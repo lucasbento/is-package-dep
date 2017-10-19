@@ -23,12 +23,8 @@ yarn add is-package-dep # or npm i is-package-dep --save
 ```js
 const isPackageDep = require('is-package-dep');
 
+const isRNProject = isPackageDep('react-native'); // value will be either `true` or `false`
 isPackageDep('react-native')
-  .then(() => {
-    // Package has `react-native` as a dependency
-  }).catch(err => {
-    // Package doesn't have `react-native` as a dependency
-  });
 ```
 
 ## API
