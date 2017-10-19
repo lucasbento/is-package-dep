@@ -1,0 +1,7 @@
+{
+  "name": "project",
+  "version": "0.0.1",
+  "dependencies": {
+    "someDep": "^21.2.1"
+  }
+}

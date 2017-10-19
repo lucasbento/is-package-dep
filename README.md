@@ -1,6 +1,6 @@
 <h1 align="center">is-package-dep</h1>
 <p align="center">
-  Parse the closest package.json file and returns whether a dependency is a dependency or not.
+  Parse the closest package.json file (upwards and downwards the tree) and returns whether a package is a dependency or not.
 </p>
 
 <p align="center">
@@ -10,7 +10,7 @@
 </p>
 
 ## Why
-Needed to check whether a folder is a [react-native](https://github.com/facebook/react-native) or not.
+Needed to check whether if a project has [react-native](https://github.com/facebook/react-native) as a dependency or not.
 
 ## Install
 
@@ -23,9 +23,12 @@ yarn add is-package-dep # or npm i is-package-dep --save
 ```js
 const isPackageDep = require('is-package-dep');
 
-isPackageDep('react-native').then(result =>
-  console.log(result); // returns a boolean value
-);
+isPackageDep('react-native')
+  .then(() => {
+    // Package has `react-native` as a dependency
+  }).catch(err => {
+    // Package doesn't have `react-native` as a dependency
+  });
 ```
 
 ## API

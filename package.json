@@ -9,6 +9,8 @@
   },
   "bugs": "https://github.com/lucasbento/is-package-dep/issues",
   "dependencies": {
+    "finddown-sync": "^1.0.2",
+    "read-pkg": "^2.0.0",
     "read-pkg-up": "^2.0.0"
   },
   "devDependencies": {
@@ -33,12 +35,16 @@
   "engines": {
     "node": ">=4.4.7"
   },
+  "jest": {
+    "resetModules": true
+  },
   "scripts": {
     "build": "npm run clear && babel src --ignore *.spec.js,__tests__,__mocks__ --out-dir dist --copy-files",
     "clear": "rm -rf ./dist",
     "lint": "eslint ./src",
     "prepublish": "npm run build",
-    "test": "npm run lint && jest --runInBand",
+    "test": "npm run lint && jest",
+    "ci": "npm run test -- --runInBand",
     "watch": "babel --ignore *.spec.js,__tests__,__mocks__ -w -d ./dist ./src --copy-files"
   }
 }
